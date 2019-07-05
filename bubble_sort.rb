@@ -9,9 +9,9 @@ end
 
 def bubble_sort_by(words)
   (words.length).times do
-	  (words.length-1).times do |i|
-	    words[i], words[i+1] = words[i+1], words[i] if (yield words[i], words[i+1]) > 0
-	  end
+    (words.length-1).times do |i|
+      words[i], words[i+1] = words[i+1], words[i] if (yield words[i], words[i+1]) > 0
+    end
   end
   words
 end
